@@ -1,5 +1,4 @@
 from colorama import init, Back, Style
-
 init(autoreset=True)
 
 BLACK = Back.BLACK + '  '
@@ -50,7 +49,6 @@ class Image():
     if len(args) == 2:
       colors = [self.convert_color(args[1]) for i in range(self.width)]
       self.img[args[0]] = colors
-
     else:
       color_params = args[1:]
       colors = [self.convert_color(arg) for arg in color_params]
