@@ -34,10 +34,9 @@ class Image():
       lst.append([])
     return lst
 
-
-def display(self):
-  for row in self.img:
-    self.display_row(row)
+  def display(self):
+    for row in self.img:
+      self.display_row(row)
 
   def display_row(self, row):
     for pixel in row:
@@ -46,7 +45,6 @@ def display(self):
 
   def convert_color(self, str_clr):
     return COLORS_DICT.get(str_clr, BLACK)
-
 
   def add_row(self, *args):
     if len(args) == 2:
